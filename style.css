@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3aa5ff;
+}
+
+img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+/* Empty puzzle grid */
+#grid1-1 {
+    left: 0px;
+    top: 0px;
+}
+
+#grid1-2 {
+    left: 200px;
+    top: 0px;
+}
+
+#grid1-3 {
+    left: 400px;
+    top: 0px;
+}
+
+#grid2-1 {
+    left: 0px;
+    top: 200px;
+}
+
+#grid2-2 {
+    left: 200px;
+    top: 200px;
+}
+
+#grid2-3 {
+    left: 400px;
+    top: 200px;
+}
+
+#grid3-1 {
+    left: 0px;
+    top: 400px;
+}
+
+#grid3-2 {
+    left: 200px;
+    top: 400px;
+}
+
+#grid3-3 {
+    left: 400px;
+    top: 400px;
+}
+
+/* Starting positions of the puzzle pieces */
+#img1-1-draggable {
+    left: 795px;
+    top: 260px;
+    z-index: 2;
+}
+
+#img1-2-draggable {
+    left: 850px;
+    top: 332px;
+    z-index: 3;
+}
+
+#img1-3-draggable {
+    left: 860px;
+    top: 392px;
+    z-index: 4;
+}
+
+#img2-1-draggable {
+    left: 728px;
+    top: 138px;
+    z-index: 1;
+}
+
+#img2-2-draggable {
+    left: 815px;
+    top: 0px;
+    z-index: 8;
+}
+
+#img2-3-draggable {
+    left: 1018px;
+    top: 0px;
+    z-index: 9;
+}
+
+#img3-1-draggable {
+    left: 868px;
+    top: 562px;
+    z-index: 5;
+}
+
+#img3-2-draggable {
+    left: 962px;
+    top: 422px;
+    z-index: 6;
+}
+
+#img3-3-draggable {
+    left: 1008px;
+    top: 318px;
+    z-index: 7;
+}
+
+/* Bring the piece being dragged to the front. */
+.ui-draggable-dragging {
+    z-index: 100 !important;
+}
